@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page Tutorial</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <h3>I am an interactive web page. I am interested in pets. </h3>
+    <!-- using div tags to organize things -->
+    <div id="name-label">Enter your pet name (real or imagined):</div>
+    <input id="name-input"/>
+    <button id="name-submit" onclick="updateName()">Submit</button>
+    <br>
+    <hr>
+    <div id="pettype-label">Enter a pet type (real or imagined):</div>
+    <input id="pettype-input"/>
+    <button id="pettype-submit" onclick="updateType()">Submit</button>
+    <br>
+    <hr>
+      <h3>Color Change Demo Section</h3>
+      <br>
+      <!-- <div id="color-change"> -->
+      <button id="chgcolor">Change color</button>
+      <br>
+      <!-- </div> -->
+    <!-- javascript file call-in here -->
+    <script src="main.js"></script>
+  </body>
+</html>
