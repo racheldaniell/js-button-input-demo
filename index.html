@@ -9,25 +9,84 @@
   </head>
   <body>
     <h1>Hello World!</h1>
-    <h3>I am an interactive web page. I am interested in pets. </h3>
+    <h3>I am an interactive web page</h3>
+
+    <!-- put this in a <div> with a class so can manipulate it-->
+    <div>
+
+      <p id="color-text">I am some text on the page. Lots of possibilities here.</p>
+     
+    </div>
+
+    <!-- STEP 1 - make your button -->
+    <!-- give it an ID with unique naming
+    later we will add "onClick" here to make it active -->
+  
+
+    <button id="message-btn" onclick="myClick()">Click to Say Hi!</button>
+
+    <!-- STEP 2 - make a new interactive button to change text color -->
+    <!-- remember a unique ID is required -->
+    <!-- after you define your function in JS, add that exact function name to the onClick here -->
+
+
+    <button id="color-btn" onclick="myColorChange()">Click for Magenta!</button>
+
+    <button id="color-btn-2" onclick="myColorChange2()">Click for Blue!</button>
+
+
+    <br>
+    <hr>
+    <br>
+
     <!-- using div tags to organize things -->
+
+    <h3>I am interested in pets </h3>
     <div id="name-label">Enter your pet name (real or imaginary):</div>
     <input id="name-input"/>
-    <button id="name-submit" onclick="updateName()">Submit</button>
+    <button id="name-submit" onclick="updateName()">Submit Name</button>
+
+    
+    <br>
+    <br>
+    <!-- add the below during demo -->
+    <!-- 
+    <h3>Styling with CSS classes</h3>
+    <p class="styled-text" id="changable-text-02">And more text about my love for pets can be written here with styles applied through CSS classes.</p>
+    <button id="color-btn-3" onclick="myStyleChange()">Click for new CSS style!</button>
+    <button id="reset-text-02" onclick="resetText()">Reset</button>
+    -->
+
+    <br>
     <br>
     <hr>
-    <div id="pettype-label">Enter a pet type (real or imaginary):</div>
-    <input id="pettype-input"/>
-    <button id="pettype-submit" onclick="updateType()">Submit Type</button>
     <br>
-    <hr>
+    <br>
+    
       <h3>Color Change Demo Section</h3>
-      <br>
-      <!-- <div id="color-change"> -->
+
+      <!-- color change button - only HTML here -->
       <button id="chgcolor">Change color</button>
-      <br>
+
       <!-- </div> -->
+
+
+<script>
+
+// in below line of code, try removing the slashes, saving and refreshing your page
+// once you have tried that, type your own code line to change the color from scratch
+
+//document.getElementById("color-text").style.color = "magenta";
+
+//document.getElementById("color-text").style.color = "blue";
+
+//next, let's move our script to proper place
+
+</script>
+
     <!-- javascript file call-in here -->
+    
     <script src="main.js"></script>
+
   </body>
 </html>
